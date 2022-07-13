@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C6C5BC"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_my_stopwatch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stopwatch"
+        android:textSize="45sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="16dp"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_middle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_my_stopwatch"
+        app:layout_constraintBottom_toTopOf="@id/btn_exit_stopwatch"
+        >
+
+        <TextView
+            android:id="@+id/tv_stopwatch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="0"
+            android:textStyle="bold"
+            android:textSize="45sp"
+            android:layout_margin="12dp"
+            android:background="@color/white"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/layout_middle"
+            app:layout_constraintBottom_toTopOf="@id/btn_start_stopwatch"
+            />
+
+        <Button
+            android:id="@+id/btn_start_stopwatch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Start"
+            android:textSize="20sp"
+            android:backgroundTint="#EED60C"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@id/tv_stopwatch"
+            app:layout_constraintTop_toBottomOf="@id/tv_stopwatch"
+            app:layout_constraintBottom_toBottomOf="@id/layout_middle"
+            />
+
+        <Button
+            android:id="@+id/btn_reset_stopwatch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:textSize="20sp"
+            android:backgroundTint="#EED60C"
+            android:textColor="@color/black"
+            app:layout_constraintBaseline_toBaselineOf="@id/btn_start_stopwatch"
+            app:layout_constraintEnd_toStartOf="@id/btn_pause_stopwatch"
+            app:layout_constraintStart_toEndOf="@id/btn_start_stopwatch" />
+
+        <Button
+            android:id="@+id/btn_pause_stopwatch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pause"
+            android:textSize="20sp"
+            android:backgroundTint="#EED60C"
+            android:textColor="@color/black"
+            app:layout_constraintBaseline_toBaselineOf="@id/btn_start_stopwatch"
+            app:layout_constraintEnd_toEndOf="@+id/tv_stopwatch"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btn_exit_stopwatch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textSize="20sp"
+        android:layout_margin="16dp"
+        android:backgroundTint="#EED60C"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

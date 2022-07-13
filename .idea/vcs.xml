@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/Android-Gallery-using-remote-server" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/CountDownTimer" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/EventManagement" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/MyCalculatorApp2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/MyNotes" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/OnlineAttendance" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Photo Gallery" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ServiceBhai" vcs="Git" />
+  </component>
+</project>
